@@ -1,0 +1,196 @@
+<script lang="ts">
+	import CreatedProjects from './CreatedProjects.svelte';
+	import { projects, aboutMe, experiences } from '$lib';
+	import Timeline from './Timeline.svelte';
+</script>
+
+<main class="flex flex-1 flex-col p-4">
+	<section id="introPage" class="lg:grid-cols-2 sm:py-14 grid grid-cols-1 gap-10 py-8">
+		<div class="lg:justify-center lg:text-left md:gap-8 lg:gap-10 flex flex-col gap-6 text-center">
+			<h2 class="sm:text-5xl md:text-6xl text-4xl font-semibold">
+				Hi! I'm <span class="poppins text-red-500">Mike John</span> a
+				<br />Full Stack
+				<span class="poppins text-red-500">Developer</span>
+			</h2>
+			<p class="sm:text-lg md:text-xl text-base">
+				Focus in <span class="font-semibold text-red-500">SvelteKit</span>,
+				<span class="font-semibold text-red-500">TailwindCSS</span>,
+				<span class="font-semibold text-red-500">Supabase</span> and
+				<span class="font-semibold text-red-500">Firebase9</span>. With experience in using
+				<span class="font-semibold text-red-500">ReactJS</span>,
+				<span class="font-semibold text-red-500">DrizzleORM</span>,
+				<span class="font-semibold text-red-500">MySQL</span>,
+				<span class="font-semibold text-red-500">C#</span>,
+				<span class="font-semibold text-red-500">JAVA</span>,
+				<span class="font-semibold text-red-500">TypeScript</span> and
+				<span class="font-semibold text-red-500">Golang</span>
+			</p>
+			<button
+				class="blueShadow lg:mr-auto lg:ml-0 sm:text-lg md:text-xl poppins group relative mx-auto overflow-hidden rounded-full bg-white px-6 py-3 text-base text-slate-950"
+			>
+				<div
+					class="absolute right-full top-0 z-0 h-full w-full bg-red-800 opacity-20 duration-200 group-hover:translate-x-full"
+				/>
+				<a href="mailto:eviotamikejohnb@gmail.com" class="z-9 relative">Get in touch &rarr;</a>
+			</button>
+		</div>
+		<div class="relative grid place-items-center shadow-2xl">
+			<img src={'images/itsme.svg'} alt="mikephoto" class="z-[2] max-h-[70vh] object-cover" />
+		</div>
+		<div class="relative mx-auto flex w-full max-w-[700px] p-0.5">
+			<div class="absolute inset-0 flex items-center justify-center overflow-hidden rounded-md">
+				<div
+					class="specialSpin absolute inset-[-20px] bg-gradient-to-r from-red-800 to-indigo-800"
+				/>
+			</div>
+		</div>
+	</section>
+	<section class="lg:py-32 flex flex-col gap-24 py-20" id="projects">
+		<div class="flex flex-col gap-2 text-center">
+			<h6 class="text-large sm:text-xl md:text-2xl">A few of my creative endeavors.</h6>
+			<h3 class="sm:text-4xl md:text-5xl text-3xl font-semibold">
+				Curious to <span class="poppins text-red-500">see</span> my work?
+			</h3>
+		</div>
+		<div class="md:flex-row md:gap-[30px] mx-auto flex flex-col gap-[60px]">
+			<div class="">
+				<a
+					href="https://www.youtube.com/@mikeSharesCode"
+					target="_blank"
+					class="sm:-mb-0 mx-auto -mb-4 -mt-10 flex max-w-fit items-center gap-2 rounded-[10px] border border-solid border-white px-4 py-2 duration-200 hover:border-red-700"
+				>
+					<i class="fa-regular fa-circle-play" />
+					<p>Watch my youtube videos</p>
+				</a>
+			</div>
+
+			<div class="">
+				<a
+					href="https://www.facebook.com/mike.eviota/videos"
+					target="_blank"
+					class="sm:-mb-0 mx-auto -mb-4 -mt-10 flex max-w-fit items-center gap-2 rounded-[10px] border border-solid border-white px-4 py-2 duration-200 hover:border-red-700"
+				>
+					<i class="fa-regular fa-circle-play" />
+					<p>Watch my facebook live streams</p>
+				</a>
+			</div>
+		</div>
+
+		<div class="lg:grid-cols-3 lg:gap-10 grid grid-cols-1 gap-12">
+			{#each projects as project}
+				<CreatedProjects {project}>
+					<p>{project.description}</p>
+
+					<div class="">
+						<p>
+							Created in <span class="text-red-500">SvelteKit</span>,
+							<span class="text-red-500">TailwindCSS</span>,
+							<span class="text-red-500">Supabase</span>
+						</p>
+					</div>
+				</CreatedProjects>
+			{/each}
+		</div>
+	</section>
+	<section
+		id="about"
+		class="lg:pt-16 lg:py-32 sm:gap-20 md:gap-24 relative flex flex-col gap-16 py-20 pt-10"
+	>
+		<div
+			class="relative flex flex-col gap-2 py-4 text-center before:absolute before:left-0 before:top-0 before:h-1.5 before:w-2/3 before:bg-red-700 after:absolute after:bottom-0 after:right-0 after:h-1.5 after:w-2/3 after:bg-red-700"
+		>
+			<h6 class="text-large sm:text-xl md:text-2xl">Want to know more?</h6>
+			<h3 class="sm:text-4xl md:text-5xl text-3xl font-semibold">
+				A bit <span class="poppins text-red-400">about</span> me.
+			</h3>
+		</div>
+		<p class="poppins sm:text-xl md:text-2xl mx-auto text-lg font-semibold">I am . . .</p>
+		<div class="mx-auto flex w-full max-w-[800px] flex-col gap-20">
+			{#each aboutMe as me, index}
+				<div class="sm:gap-8 flex gap-6">
+					<p class="poppins sm:text-5xl md:text-6xl text-4xl font-semibold text-slate-500">
+						0{index + 1}
+					</p>
+					<div class="sm:gap-8 flex flex-col gap-6">
+						<h3 class="sm:text-3xl md:text-5xl text-2xl">
+							{me.name}
+						</h3>
+						<p>{me.description}</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+		<h5 class={' sm:text-3xl poppins text-center text-2xl font-semibold '}>
+			The <span class="text-red-400">Complete</span> Package
+		</h5>
+		<div class="mx-auto flex w-full max-w-[800px] flex-col gap-10 overflow-x-scroll">
+			<table class="rounded bg-white text-center text-slate-700">
+				<thead class={'border-b border-solid border-slate-200  '}>
+					<tr class="">
+						<th />
+						<th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
+						<th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
+						<th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
+						<th class="whitespace-nowrap bg-red-700 p-4 px-8 text-white">Me</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="border-b border-solid border-slate-200">
+						<td class="border-r border-solid border-white py-4 pl-4 pr-8 text-sm font-semibold"
+							>Dedication</td
+						>
+						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-green-500" /></td>
+					</tr>
+					<tr class="border-b border-solid border-slate-200">
+						<td class="border-r border-solid border-white py-4 pl-4 pr-8 text-sm font-semibold"
+							>Critical Thought</td
+						>
+						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-green-500" /></td>
+					</tr>
+					<tr>
+						<td class="border-r border-solid border-white py-4 pl-4 pr-8 text-sm font-semibold"
+							>Interpersonal Skills</td
+						>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-green-500" /></td>
+					</tr>
+					<tr class="border-t border-solid border-slate-200">
+						<td class="border-r border-solid border-white py-4 pl-4 pr-8 text-sm font-semibold"
+							>Progamming Ability</td
+						>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-slate-500" /></td>
+						<td><i class="fa-solid fa-check text-green-500" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="sm:hidden mx-auto -mt-12 italic opacity-50">
+			<p>Scroll to see more &rarr;</p>
+		</div>
+
+		<div
+			class="relative flex flex-col gap-2 py-4 text-center before:absolute before:left-0 before:top-0 before:h-1.5 before:w-2/3 before:bg-red-700 after:absolute after:bottom-0 after:right-0 after:h-1.5 after:w-2/3 after:bg-red-700"
+		>
+			<h6 class="text-large sm:text-xl md:text-2xl">Want to know more?</h6>
+			<h3 class="sm:text-4xl md:text-5xl text-3xl font-semibold">
+				A bit of my <span class="poppins text-red-400">experience</span>.
+			</h3>
+		</div>
+
+		{#each experiences as experience}
+			<Timeline {experience} />
+		{/each}
+
+		<p class="mx-auto">So why not invest?</p>
+	</section>
+</main>
