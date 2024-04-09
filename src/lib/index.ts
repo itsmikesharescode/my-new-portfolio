@@ -30,10 +30,17 @@ export const projects = [
 
     {
         name: "Fullstack Chat App",
-        icon: "icons//svelteIcon.svg",
+        icon: "icons/svelteIcon.svg",
         description: "A side project that enables all users to chat with each other in real-time using websockets of Supabase or Firestore.",
         githublink: "https://github.com/itsmikesharescode/fullstack-chat-app"
     },
+
+    {
+        name: "Annapolis Finance Inc.",
+        icon: "icons/svelteIcon.svg",
+        description: "My internship project enables users to explore information about Annapolis Finance, its products, loans, and purchase second-hand motorcycles.",
+        githublink: "https://github.com/itsmikesharescode/my-internship-project"
+    }
 ];
 
 

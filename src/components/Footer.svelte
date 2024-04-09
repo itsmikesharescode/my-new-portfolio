@@ -1,5 +1,5 @@
-<footer class="md:flex-row flex flex-col border-t border-solid border-violet-950">
-	<div class="sm:py-32 sm:gap-8 flex w-full flex-col gap-4 bg-black py-20">
+<footer class="flex flex-col border-t border-solid border-violet-950 md:flex-row">
+	<div class="flex w-full flex-col gap-4 bg-black py-20 sm:gap-8 sm:py-32">
 		<div class="flex flex-col gap-4 p-[22px]">
 			<p class="max-w-fit bg-white px-4 py-2 font-medium text-slate-950">
 				Character References &darr;
@@ -21,7 +21,7 @@
 					class="underline transition-all hover:text-red-500">David Genesis Pedeglorio</a
 				>
 				<p class="text-slate-400">
-					Senior Software Engineer / CEO and Founder of Founder of Filipino Web Development Peers
+					Senior Software Engineer / CEO and Founder of Filipino Web Development Peers
 				</p>
 			</div>
 
@@ -35,7 +35,7 @@
 	</div>
 
 	<div
-		class="sm:py-32 sm:gap-8 flex w-full flex-col items-center justify-center gap-4 bg-black py-20"
+		class="flex w-full flex-col items-center justify-center gap-4 bg-black py-20 sm:gap-8 sm:py-32"
 	>
 		<p class="bg-white px-4 py-2 font-medium text-slate-950">Connect with me &darr;</p>
 		<div class="flex flex-col items-center justify-center gap-4">

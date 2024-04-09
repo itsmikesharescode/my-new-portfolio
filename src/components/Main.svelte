@@ -2,6 +2,7 @@
 	import CreatedProjects from './CreatedProjects.svelte';
 	import { projects, aboutMe, experiences } from '$lib';
 	import Timeline from './Timeline.svelte';
+	import Pagination from './Pagination.svelte';
 </script>
 
 <main class="flex flex-1 flex-col p-4">
@@ -93,6 +94,7 @@
 				</CreatedProjects>
 			{/each}
 		</div>
+		<Pagination />
 	</section>
 	<section
 		id="about"
