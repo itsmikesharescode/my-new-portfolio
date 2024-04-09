@@ -14,14 +14,17 @@
 	class={'sticky top-0 z-[10] flex items-center justify-between border-b border-solid px-6 duration-200 ' +
 		(y > 0 ? ' border-violet-950 bg-slate-950 py-4' : ' border-transparent bg-transparent py-6')}
 >
-	<h1 class="font-medium">
-		<b class="poppins font-bold">Mike John</b> <span class="">Eviota</span>
-	</h1>
-	<div class="sm:flex hidden items-center gap-4">
+	<a href="/">
+		<h1 class="font-medium">
+			<b class="poppins font-bold">Mike John</b> <span class="">Eviota</span>
+		</h1>
+	</a>
+
+	<div class="hidden items-center gap-4 sm:flex">
 		{#each tabs as tab, index}
 			<a
 				href={tab.link}
-				class="duration-200 hover:text-violet-400"
+				class="duration-200 hover:text-red-400"
 				target={index === 2 ? '_blank' : ''}
 			>
 				<p>{tab.name}</p>
