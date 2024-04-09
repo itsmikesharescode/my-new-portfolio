@@ -25,7 +25,7 @@ export const projects = [
         name: 'Collab Learn System',
         icon: 'icons/svelteIcon.svg',
         description: 'A capstone project for my friend that allows users to upload, delete ...CRUD and interact to each other',
-        githublink: ''
+        githublink: 'https://github.com/collablearn/collab-learn-final'
     },
 
     {
