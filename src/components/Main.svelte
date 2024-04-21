@@ -3,6 +3,7 @@
 	import { projects, aboutMe, experiences } from '$lib';
 	import Timeline from './Timeline.svelte';
 	import Pagination from './Pagination.svelte';
+	import { paginate } from '$lib/helpers';
 </script>
 
 <main class="flex flex-1 flex-col p-4">
@@ -79,21 +80,6 @@
 			</div>
 		</div>
 
-		<div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-10">
-			{#each projects as project}
-				<CreatedProjects {project}>
-					<p>{project.description}</p>
-
-					<div class="">
-						<p>
-							Created in <span class="text-red-500">SvelteKit</span>,
-							<span class="text-red-500">TailwindCSS</span>,
-							<span class="text-red-500">Supabase</span>
-						</p>
-					</div>
-				</CreatedProjects>
-			{/each}
-		</div>
 		<Pagination />
 	</section>
 	<section
@@ -112,9 +98,7 @@
 		<div class="mx-auto flex w-full max-w-[800px] flex-col gap-20">
 			{#each aboutMe as me, index}
 				<div class="flex gap-6 sm:gap-8">
-					<p class="poppins text-4xl font-semibold text-slate-500 sm:text-5xl md:text-6xl">
-						0{index + 1}
-					</p>
+					<img src={'icons/check_icon.svg'} alt="checkIcon" class="h-[50px] w-[50px]" />
 					<div class="flex flex-col gap-6 sm:gap-8">
 						<h3 class="text-2xl sm:text-3xl md:text-5xl">
 							{me.name}

@@ -1,47 +1,72 @@
-export const projects = [
+import { writable, type Writable } from "svelte/store"
+import type { CreatedProjects } from "./types";
+
+export const projects = writable<CreatedProjects[]>([
     {
+        id: 0,
         name: 'Enrollment System',
         icon: 'icons/svelteIcon.svg',
         description:
             'My Capstone Project was developed independently during my college years because my groupmates were unable to learn programming at that time. It allows students to enroll in their courses online.',
+        youtubelink: "https://www.youtube.com/embed/HdBo_6Dmo90?si=4csBIw7GTEdo7M_Z",
         githublink: "https://github.com/itsmikesharescode/enrollment-system-full-rewrite"
     },
     {
+        id: 1,
         name: 'Debt Management System',
         icon: 'icons/svelteIcon.svg',
         description:
             'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly debt management. This project allows administrators to track and manage customer purchases, payments, and balances.',
+        youtubelink: undefined,
         githublink: "https://github.com/itsmikesharescode/debt-management-system"
     },
     {
+        id: 2,
         name: 'Dynamic Voting System',
         icon: 'icons/svelteIcon.svg',
-        description:
-            'A capstone project for my friend that allows administrators to CRUD and voters to interact dynamically within a voting system.',
+        description: 'A capstone project for my friend that allows administrators to CRUD and voters to interact dynamically within a voting system.',
+        youtubelink: "https://www.youtube.com/embed/fR-ZOSUgZMw?si=I4nGM8_Vf4oJG3pj",
         githublink: "https://github.com/itsmikesharescode/shad-cn-voting-system-port"
     },
 
     {
+        id: 3,
         name: 'Collab Learn System',
         icon: 'icons/svelteIcon.svg',
         description: 'A capstone project for my friend that allows users to upload, delete ...CRUD and interact to each other',
-        githublink: 'https://github.com/collablearn/collab-learn-final'
+        youtubelink: undefined,
+        githublink: 'https://github.com/collablearn/collab-learn-final',
+
     },
 
     {
+        id: 4,
         name: "Fullstack Chat App",
         icon: "icons/svelteIcon.svg",
         description: "A side project that enables all users to chat with each other in real-time using websockets of Supabase or Firestore.",
+        youtubelink: undefined,
         githublink: "https://github.com/itsmikesharescode/fullstack-chat-app"
     },
 
     {
+        id: 5,
         name: "Annapolis Finance Inc.",
         icon: "icons/svelteIcon.svg",
         description: "My internship project enables users to explore information about Annapolis Finance, its products, loans, and purchase second-hand motorcycles.",
+        youtubelink: "https://www.youtube.com/embed/sH_lUKkOJn0?si=p2G8Im7OiYrqjO1k",
         githublink: "https://github.com/itsmikesharescode/my-internship-project"
-    }
-];
+    },
+    {
+        id: 6,
+        name: "Web-Based Voting System for Lazaro Francisco Integrated School (SSG)",
+        icon: "icons/svelteIcon.svg",
+        description: "A capstone project i made for my friend.",
+        youtubelink: undefined,
+        githublink: "https://github.com/itsmikesharescode/Voting-System-SSG"
+    },
+
+
+]);
 
 
 export const aboutMe = [

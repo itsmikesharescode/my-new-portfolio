@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="">
-				<a href="/" class="underline transition-all hover:text-red-500">Neil N. Baguinao</a>
+				<a href="/" class="underline transition-all hover:text-red-500">Neil N. Baguinaon</a>
 				<p class="text-slate-400">
 					Section Head - CLB ICT Endpoint Management and Server Administration
 				</p>

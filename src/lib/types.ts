@@ -1,7 +1,9 @@
 export type CreatedProjects = {
+    id: number
     name: string
     icon: string
     description: string
+    youtubelink: string | undefined
     githublink: string
 }
 
@@ -10,3 +12,5 @@ export type Experiences = {
     date: string
     content: string
 }
+
+

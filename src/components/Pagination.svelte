@@ -1,9 +1,15 @@
 <script lang="ts">
 	import * as Pagination from '$lib/components/ui/pagination';
+	import { projects } from '$lib';
+	import CreatedProjects from './CreatedProjects.svelte';
+	import { paginate } from '$lib/helpers';
+	import { flip } from 'svelte/animate';
+	import { fade, scale } from 'svelte/transition';
+	import * as HoverCard from '$lib/components/ui/hover-card';
 </script>
 
-<Pagination.Root count={12} perPage={6} let:pages let:currentPage>
-	<Pagination.Content>
+<Pagination.Root count={$projects.length} perPage={6} let:pages let:currentPage>
+	<Pagination.Content class="my-[50px]">
 		<Pagination.Item>
 			<Pagination.PrevButton />
 		</Pagination.Item>
@@ -24,4 +30,24 @@
 			<Pagination.NextButton />
 		</Pagination.Item>
 	</Pagination.Content>
+
+	{#if currentPage}
+		<div class="grid grid-cols-1 grid-rows-2 gap-[10px] lg:grid-cols-3 lg:gap-[20px]">
+			{#each paginate($projects, currentPage) as project, index (project.id)}
+				<div class="" animate:flip={{ duration: 200 }} in:scale>
+					<CreatedProjects {project}>
+						<p title={project.description} class="line-clamp-3">{project.description}</p>
+
+						<div class="">
+							<p>
+								Created in <span class="text-red-500">SvelteKit</span>,
+								<span class="text-red-500">TailwindCSS</span>,
+								<span class="text-red-500">Supabase</span>
+							</p>
+						</div>
+					</CreatedProjects>
+				</div>
+			{/each}
+		</div>
+	{/if}
 </Pagination.Root>
