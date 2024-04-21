@@ -17,7 +17,7 @@ export const projects = writable<CreatedProjects[]>([
         icon: 'icons/svelteIcon.svg',
         description:
             'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly debt management. This project allows administrators to track and manage customer purchases, payments, and balances.',
-        youtubelink: undefined,
+        youtubelink: "https://www.youtube.com/embed/myOprGKb-fY?si=Mi-hYwvijISr_4H0",
         githublink: "https://github.com/itsmikesharescode/debt-management-system"
     },
     {
@@ -67,6 +67,7 @@ export const projects = writable<CreatedProjects[]>([
 
 
 ]);
+
 
 
 export const aboutMe = [
