@@ -13,7 +13,7 @@
 </script>
 
 <div
-	class="sm:text-base container relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col text-sm"
+	class="container relative mx-auto flex min-h-screen w-full max-w-[1400px] flex-col text-sm sm:text-base"
 >
 	<div
 		class={'fixed bottom-0 z-[10] flex w-full p-10 duration-200 ' +
@@ -21,7 +21,7 @@
 	>
 		<button
 			on:click={goTop}
-			class="sm:px-4 ml-auto grid aspect-square cursor-pointer place-items-center rounded-full bg-slate-900 px-3 text-violet-400 hover:bg-slate-800"
+			class="ml-auto grid aspect-square cursor-pointer place-items-center rounded-full bg-slate-900 px-3 text-red-400 hover:bg-slate-800 sm:px-4"
 		>
 			<i class="fa-solid fa-arrow-up" />
 		</button>
