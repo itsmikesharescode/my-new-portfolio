@@ -1,9 +1,25 @@
 <script lang="ts">
-
-	import {  aboutMe, experiences } from '$lib';
+	import { aboutMe, character, experiences } from '$lib';
 	import Timeline from './Timeline.svelte';
 	import Pagination from './Pagination.svelte';
+	import Typewriter from 'svelte-typewriter';
+	import { onMount } from 'svelte';
 
+	let randomIndex = 0;
+
+	const generateSuggestions = () => {
+		let newIndex = 0;
+		do {
+			newIndex = Math.round(Math.random() * (character.length - 1));
+		} while (newIndex === randomIndex);
+		randomIndex = newIndex;
+	};
+
+	const runCharacters = () => {
+		setInterval(() => generateSuggestions(), 3000);
+	};
+
+	onMount(() => runCharacters());
 </script>
 
 <main class="flex flex-1 flex-col p-4">
@@ -13,6 +29,17 @@
 				Hi! I'm <span class="poppins text-red-500">Mike John</span> a
 				<br />Full Stack
 				<span class="poppins text-red-500">Developer</span>
+				<br />
+				<div class="flex items-center justify-center gap-[20px] lg:justify-start">
+					<span>a</span>
+					<Typewriter
+						interval={100}
+						keepCursorOnFinish={true}
+						style="--cursor-color: var(--cursor-color);"
+					>
+						<span class="poppins text-purple-600">{character[randomIndex]}</span>
+					</Typewriter>
+				</div>
 			</h2>
 			<p class="text-base sm:text-lg md:text-xl">
 				Focus in <span class="font-semibold text-red-500">SvelteKit</span>,
@@ -174,3 +201,9 @@
 		<p class="mx-auto">So why not invest?</p>
 	</section>
 </main>
+
+<style>
+	:root {
+		--cursor-color: purple;
+	}
+</style>

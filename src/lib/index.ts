@@ -68,17 +68,25 @@ export const projects = writable<CreatedProjects[]>([
 
     {
         id: 7,
-        name: "HIV awareness Database Management System",
+        name: "HIV Awareness Database Management System",
         icon: "icons/svelteIcon.svg",
         description: "A capstone project i made for my friend.",
-        youtubelink: undefined,
+        youtubelink: 'https://www.youtube.com/embed/4sMjJWl1jx8?si=wutMaZ7LQH-c4KAp',
         githublink: "https://github.com/itsmikesharescode/hiv-management"
     }
 
 
 ]);
 
-
+export const character = [
+    "Learner", "Generalist", "Listener",
+    "Explorer", "Innovator", "Collaborator",
+    "Problem-solver", "Visionary", "Strategist",
+    "Communicator", "Trailblazer",
+    "Analyst", "Executor",
+    "Specialist", "Creator", "Pioneer",
+    "Facilitator", "Synthesizer",
+]
 
 export const aboutMe = [
     {
@@ -111,4 +119,5 @@ export const experiences = [
         content: "I was an intern in Annapolis Credit Management Services, INC. I used to do basic troubleshooting of servers, routers, printers, and some networking stuff. I am also the one who tried build their main website for company wing name Annapolis Finance Inc. Unfortunately, due to time constraints and numerous revisions, the project's requirements grew beyond the scope of my internship timeframe. As a result, I was unable to complete it before my internship concluded. ",
     },
 
-]
+];
+
