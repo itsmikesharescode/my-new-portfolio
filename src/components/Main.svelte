@@ -1,9 +1,9 @@
 <script lang="ts">
-	import CreatedProjects from './CreatedProjects.svelte';
-	import { projects, aboutMe, experiences } from '$lib';
+
+	import {  aboutMe, experiences } from '$lib';
 	import Timeline from './Timeline.svelte';
 	import Pagination from './Pagination.svelte';
-	import { paginate } from '$lib/helpers';
+
 </script>
 
 <main class="flex flex-1 flex-col p-4">
@@ -40,15 +40,7 @@
 			<img src={'images/itsme.svg'} alt="mikephoto" class="z-[2] max-h-[70vh] object-cover" />
 		</div>
 	</section>
-	<!-- <div class="relative mx-auto flex w-full max-w-[700px] p-0.5">
-		<div class="absolute inset-0 flex items-center justify-center overflow-hidden rounded-md">
-			<div class="specialSpin absolute inset-[-20px] bg-gradient-to-r from-red-800 to-red-700" />
-		</div>
 
-		<div class="absolute inset-0 flex items-center justify-center overflow-hidden rounded-md">
-			<div class="subSpin absolute inset-[-20px] bg-gradient-to-r from-red-800 to-white" />
-		</div>
-	</div> -->
 	<section class="flex flex-col gap-24 py-20 lg:py-32" id="projects">
 		<div class="flex flex-col gap-2 text-center">
 			<h6 class="text-large sm:text-xl md:text-2xl">A few of my creative endeavors.</h6>

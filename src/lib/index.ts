@@ -56,6 +56,7 @@ export const projects = writable<CreatedProjects[]>([
         youtubelink: "https://www.youtube.com/embed/sH_lUKkOJn0?si=p2G8Im7OiYrqjO1k",
         githublink: "https://github.com/itsmikesharescode/my-internship-project"
     },
+
     {
         id: 6,
         name: "Web-Based Voting System for Lazaro Francisco Integrated School (SSG)",
@@ -64,6 +65,15 @@ export const projects = writable<CreatedProjects[]>([
         youtubelink: undefined,
         githublink: "https://github.com/itsmikesharescode/Voting-System-SSG"
     },
+
+    {
+        id: 7,
+        name: "HIV awareness Database Management System",
+        icon: "icons/svelteIcon.svg",
+        description: "A capstone project i made for my friend.",
+        youtubelink: undefined,
+        githublink: "https://github.com/itsmikesharescode/hiv-management"
+    }
 
 
 ]);

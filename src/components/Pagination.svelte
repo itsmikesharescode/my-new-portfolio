@@ -4,8 +4,7 @@
 	import CreatedProjects from './CreatedProjects.svelte';
 	import { paginate } from '$lib/helpers';
 	import { flip } from 'svelte/animate';
-	import { fade, scale } from 'svelte/transition';
-	import * as HoverCard from '$lib/components/ui/hover-card';
+	import { scale } from 'svelte/transition';
 </script>
 
 <Pagination.Root count={$projects.length} perPage={6} let:pages let:currentPage>
