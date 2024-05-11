@@ -88,7 +88,7 @@
 
 			<div class="">
 				<a
-					href="https://www.facebook.com/mike.eviota/videos"
+					href="https://www.facebook.com/mike.eviota"
 					target="_blank"
 					class="mx-auto -mb-4 -mt-10 flex max-w-fit items-center gap-2 rounded-[10px] border border-solid border-white px-4 py-2 duration-200 hover:border-red-700 sm:-mb-0"
 				>
