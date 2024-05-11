@@ -8,8 +8,8 @@ export const projects = writable<CreatedProjects[]>([
         icon: 'icons/svelteIcon.svg',
         description:
             'My Capstone Project was developed independently during my college years because my groupmates were unable to learn programming at that time. It allows students to enroll in their courses online.',
-        youtubelink: "https://www.youtube.com/embed/HdBo_6Dmo90?si=4csBIw7GTEdo7M_Z",
-        githublink: "https://github.com/itsmikesharescode/enrollment-system-full-rewrite"
+        youtubelink: "https://www.youtube.com/embed/AGf2w8eiD8g?si=a_iVCLbi3BKD3zj0",
+        githublink: "https://github.com/itsmikesharescode/enrollment-system-caps"
     },
     {
         id: 1,

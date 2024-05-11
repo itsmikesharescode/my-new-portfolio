@@ -31,7 +31,6 @@
 				<span class="poppins text-red-500">Developer</span>
 				<br />
 				<div class="flex items-center justify-center gap-[20px] lg:justify-start">
-					<span>a</span>
 					<Typewriter
 						interval={100}
 						keepCursorOnFinish={true}
