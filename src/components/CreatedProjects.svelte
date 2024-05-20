@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { CreatedProjects } from '$lib/types';
 	import * as Dialog from '$lib/components/ui/dialog';
-	import { Button } from '$lib/components/ui/button';
 	export let project: CreatedProjects;
 </script>
 

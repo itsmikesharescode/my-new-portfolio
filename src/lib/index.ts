@@ -35,7 +35,7 @@ export const projects = writable<CreatedProjects[]>([
         icon: 'icons/svelteIcon.svg',
         description:
             'A capstone project for my friend, integrated with Xendit Payment Gateway',
-        youtubelink: "https://www.youtube.com/embed/AGf2w8eiD8g?si=a_iVCLbi3BKD3zj0",
+        youtubelink: "https://www.youtube.com/embed/hkTmOWwyQjE?si=ZaFkss0QejVXCtV5",
         githublink: "https://github.com/itsmikesharescode/food-ordering-system"
     },
 
