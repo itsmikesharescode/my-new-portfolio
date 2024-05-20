@@ -1,4 +1,4 @@
-import { writable, type Writable } from "svelte/store"
+import { writable } from "svelte/store"
 import type { CreatedProjects } from "./types";
 
 export const projects = writable<CreatedProjects[]>([
@@ -17,8 +17,8 @@ export const projects = writable<CreatedProjects[]>([
         icon: 'icons/svelteIcon.svg',
         description:
             'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly debt management. This project allows administrators to track and manage customer purchases, payments, and balances.',
-        youtubelink: "https://www.youtube.com/embed/myOprGKb-fY?si=Mi-hYwvijISr_4H0",
-        githublink: "https://github.com/itsmikesharescode/debt-management-system"
+        youtubelink: "https://www.youtube.com/embed/hkTmOWwyQjE?si=ZaFkss0QejVXCtV5",
+        githublink: "https://github.com/itsmikesharescode/food-ordering-system"
     },
     {
         id: 2,
@@ -31,6 +31,16 @@ export const projects = writable<CreatedProjects[]>([
 
     {
         id: 3,
+        name: 'Food Ordering System',
+        icon: 'icons/svelteIcon.svg',
+        description:
+            'A capstone project for my friend, integrated with Xendit Payment Gateway',
+        youtubelink: "https://www.youtube.com/embed/AGf2w8eiD8g?si=a_iVCLbi3BKD3zj0",
+        githublink: "https://github.com/itsmikesharescode/food-ordering-system"
+    },
+
+    {
+        id: 4,
         name: 'Collab Learn System',
         icon: 'icons/svelteIcon.svg',
         description: 'A capstone project for my friend that allows users to upload, delete ...CRUD and interact to each other',
@@ -40,7 +50,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 4,
+        id: 5,
         name: "Fullstack Chat App",
         icon: "icons/svelteIcon.svg",
         description: "A side project that enables all users to chat with each other in real-time using websockets of Supabase or Firestore.",
@@ -49,7 +59,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 5,
+        id: 6,
         name: "Annapolis Finance Inc.",
         icon: "icons/svelteIcon.svg",
         description: "My internship project enables users to explore information about Annapolis Finance, its products, loans, and purchase second-hand motorcycles.",
@@ -58,7 +68,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 6,
+        id: 7,
         name: "Web-Based Voting System for Lazaro Francisco Integrated School (SSG)",
         icon: "icons/svelteIcon.svg",
         description: "A capstone project i made for my friend.",
@@ -67,7 +77,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 7,
+        id: 8,
         name: "HIV Awareness Database Management System",
         icon: "icons/svelteIcon.svg",
         description: "A capstone project i made for my friend.",
