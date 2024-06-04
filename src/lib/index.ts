@@ -18,7 +18,7 @@ export const projects = writable<CreatedProjects[]>([
         description:
             'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly credit management. This project allows administrators to track and manage customer purchases, payments, and balances.',
         youtubelink: "https://www.youtube.com/embed/P5LpV24jsKg?si=vlq5uUghfLFeXYTw",
-        githublink: ""
+        githublink: "https://github.com/itsmikesharescode/credit-management-system"
     },
 
     {
