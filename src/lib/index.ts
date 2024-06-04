@@ -13,24 +13,16 @@ export const projects = writable<CreatedProjects[]>([
     },
     {
         id: 1,
-        name: 'Debt Management System',
+        name: 'Credit Management System',
         icon: 'icons/svelteIcon.svg',
         description:
-            'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly debt management. This project allows administrators to track and manage customer purchases, payments, and balances.',
-        youtubelink: "https://www.youtube.com/embed/hkTmOWwyQjE?si=ZaFkss0QejVXCtV5",
-        githublink: "https://github.com/itsmikesharescode/food-ordering-system"
-    },
-    {
-        id: 2,
-        name: 'Dynamic Voting System',
-        icon: 'icons/svelteIcon.svg',
-        description: 'A capstone project for my friend that allows administrators to CRUD and voters to interact dynamically within a voting system.',
-        youtubelink: "https://www.youtube.com/embed/fR-ZOSUgZMw?si=I4nGM8_Vf4oJG3pj",
-        githublink: "https://github.com/itsmikesharescode/shad-cn-voting-system-port"
+            'A side project to provide solutions for small businesses that engage in daily, weekly, or yearly credit management. This project allows administrators to track and manage customer purchases, payments, and balances.',
+        youtubelink: "https://www.youtube.com/embed/P5LpV24jsKg?si=vlq5uUghfLFeXYTw",
+        githublink: ""
     },
 
     {
-        id: 3,
+        id: 2,
         name: 'Food Ordering System',
         icon: 'icons/svelteIcon.svg',
         description:
@@ -40,7 +32,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 4,
+        id: 3,
         name: 'Collab Learn System',
         icon: 'icons/svelteIcon.svg',
         description: 'A capstone project for my friend that allows users to upload, delete ...CRUD and interact to each other',
@@ -50,16 +42,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 5,
-        name: "Fullstack Chat App",
-        icon: "icons/svelteIcon.svg",
-        description: "A side project that enables all users to chat with each other in real-time using websockets of Supabase or Firestore.",
-        youtubelink: undefined,
-        githublink: "https://github.com/itsmikesharescode/fullstack-chat-app"
-    },
-
-    {
-        id: 6,
+        id: 4,
         name: "Annapolis Finance Inc.",
         icon: "icons/svelteIcon.svg",
         description: "My internship project enables users to explore information about Annapolis Finance, its products, loans, and purchase second-hand motorcycles.",
@@ -68,7 +51,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 7,
+        id: 5,
         name: "Web-Based Voting System for Lazaro Francisco Integrated School (SSG)",
         icon: "icons/svelteIcon.svg",
         description: "A capstone project i made for my friend.",
@@ -77,7 +60,7 @@ export const projects = writable<CreatedProjects[]>([
     },
 
     {
-        id: 8,
+        id: 6,
         name: "HIV Awareness Database Management System",
         icon: "icons/svelteIcon.svg",
         description: "A capstone project i made for my friend.",
